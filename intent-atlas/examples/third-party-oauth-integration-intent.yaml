@@ -1,0 +1,24 @@
+intent_id: third-party-oauth-integration
+purpose: Allow users to sign in or link their account using third-party identity providers (e.g., Google, Facebook, GitHub).
+flows:
+  - Initiate OAuth flow from login or settings
+  - Redirect to provider for authentication/consent
+  - Handle callback and exchange code for token
+  - Link or create local user account
+  - Handle errors, cancellations, and edge cases
+  - Allow unlinking or managing connected accounts
+considerations:
+  security: Validate tokens, prevent CSRF, secure redirect URIs
+  user_experience: Clear feedback, fallback to password login, error handling
+  privacy: Request only necessary scopes, inform users about data usage
+  compliance: Store and handle tokens securely, support account deletion
+  extensibility: Support multiple providers, easy to add new ones
+references:
+  template: ../templates/intent-template-solo-dev.md
+  principles:
+    - ../principles/ai-role-and-detailing-principle.md
+adaptation:
+  enterprise: Add SSO/SAML support
+  mobile: Use in-app browser or native SDKs
+  multi_account: Allow linking multiple providers per user
+  open_source: Support self-hosted or custom OAuth providers 

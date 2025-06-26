@@ -1,0 +1,23 @@
+intent_id: soft-deletion-data-retention
+purpose: Enable resources to be recoverable after deletion and comply with data retention policies.
+flows:
+  - Mark resource as deleted (soft delete)
+  - Exclude soft-deleted resources from normal queries
+  - Restore resource from deleted state
+  - Permanently purge resource after retention period
+  - Audit log all deletion and restoration actions
+considerations:
+  compliance: Support for GDPR/CCPA and other regulations
+  user_experience: Clear feedback on deletion, ability to undo or restore
+  data_integrity: Prevent orphaned or inconsistent data
+  automation: Scheduled purging, notifications before permanent deletion
+  security: Restrict who can delete, restore, or purge data
+references:
+  template: ../templates/intent-template-solo-dev.md
+  principles:
+    - ../principles/intent-enriched-format-principle.md
+adaptation:
+  regulated: Add legal hold and audit export features
+  multi_tenant: Isolate deletion and retention by tenant
+  large_data: Use batch or background jobs for purging
+  user_facing: Provide self-service data export and deletion 

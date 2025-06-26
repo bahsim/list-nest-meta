@@ -1,0 +1,23 @@
+intent_id: onboarding-wizard
+purpose: Guide new users through a multi-step setup or configuration process, ensuring activation and readiness.
+flows:
+  - Welcome and introduction
+  - Step-by-step data collection (profile, preferences, etc.)
+  - Progress tracking and navigation (next, back, skip)
+  - Save/resume onboarding state
+  - Final confirmation and transition to main experience
+considerations:
+  user_experience: Clear progress indicators, skip/return steps
+  validation: Validate input at each step, helpful feedback
+  persistence: Save progress for interrupted sessions
+  accessibility: Keyboard navigation, screen reader support
+  personalization: Adapt steps based on user type or answers
+references:
+  template: ../templates/ui-ux-intent-example-template.md
+  principles:
+    - ../principles/ai-assisted-ui-ux-design-principles.md
+adaptation:
+  mobile: Optimize for touch, offline support
+  b2b_saas: Add team/organization setup steps
+  regulated: Add consent and compliance steps
+  ai: Use adaptive flows based on user data/behavior 

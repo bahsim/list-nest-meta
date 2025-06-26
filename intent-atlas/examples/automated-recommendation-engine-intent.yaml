@@ -1,0 +1,23 @@
+intent_id: automated-recommendation-engine
+purpose: Deliver personalized suggestions or content to users based on their behavior, preferences, or context.
+flows:
+  - Collect user activity and preference data
+  - Process data and generate recommendations (batch or real-time)
+  - Deliver recommendations via UI, notifications, or API
+  - Collect feedback (explicit or implicit) to improve future recommendations
+  - Monitor and audit recommendation quality and fairness
+considerations:
+  privacy: Respect user consent and data minimization
+  transparency: Explain why recommendations are made (where possible)
+  bias_fairness: Monitor for and mitigate algorithmic bias
+  performance: Ensure recommendations are timely and scalable
+  extensibility: Support multiple algorithms or models
+references:
+  template: ../templates/intent-template-solo-dev.md
+  principles:
+    - ../principles/ai-assisted-ui-ux-design-principles.md
+adaptation:
+  ecommerce: Personalize product listings and promotions
+  media: Suggest articles, videos, or playlists
+  saas: Recommend features, integrations, or workflows
+  regulated: Add explainability and audit logging 

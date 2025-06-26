@@ -1,0 +1,24 @@
+intent_id: restful-crud-resource-x
+purpose: Provide a standard, secure, and extensible API for creating, reading, updating, and deleting Resource X.
+flows:
+  - Create Resource X (POST)
+  - Retrieve Resource X (GET by ID, GET list)
+  - Update Resource X (PUT/PATCH)
+  - Delete Resource X (DELETE, soft or hard)
+  - List/search/filter Resource X
+considerations:
+  authentication: Secure endpoints, role-based access
+  validation: Enforce schema and business rules
+  error_handling: Consistent, informative error responses
+  versioning: Support for API evolution
+  extensibility: Custom fields, hooks, or events
+  documentation: OpenAPI/Swagger or similar
+references:
+  template: ../templates/intent-template-solo-dev.md
+  principles:
+    - ../principles/intent-enriched-format-principle.md
+adaptation:
+  graphql: Replace REST endpoints with queries/mutations
+  event_driven: Add event publishing on CRUD actions
+  multi_tenant: Add tenant scoping and isolation
+  regulated: Audit logging and compliance checks 
