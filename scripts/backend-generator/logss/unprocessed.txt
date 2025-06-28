@@ -1,0 +1,66 @@
+# Unprocessed and Failed Intents (last run)
+
+## LLM/YAML/Parsing Errors
+ai_native_workflow_001: 'instructions' is not an array in LLM response
+data_integrity_verification: 'instructions' is not an array in LLM response
+perm_service_integration: 'instructions' is not an array in LLM response
+handle_notification_errors: 'instructions' is not an array in LLM response
+tailor_setup_process_based_on_community_type: bad indentation of a mapping entry (55:7)
+update_language_files: bad indentation of a sequence entry (57:4)
+retrieve_notification_record: 'instructions' is not an array in LLM response
+create_preference_entity_003: 'instructions' is not an array in LLM response
+create_role_entity: 'instructions' is not an array in LLM response
+create_user_profile_entity_persistence: 'instructions' is not an array in LLM response
+set_default_language_for_new_users: 'instructions' is not an array in LLM response
+enforce_space_modification_permission: 'instructions' is not an array in LLM response
+fetch_user_profile_authentication: 'instructions' is not an array in LLM response
+fetch_user_profile_data_retrieval: 'instructions' is not an array in LLM response
+display_user_badges: bad indentation of a mapping entry (85:7)
+handle_filtering: can not read an implicit mapping pair; a colon is missed (58:18)
+handle_empty_states: 'instructions' is not an array in LLM response
+generate_ai_driven_code: 'instructions' is not an array in LLM response
+generate_ai_driven_documentation: 'instructions' is not an array in LLM response
+config_security: 'instructions' is not an array in LLM response
+user_friendly_error_messages: 'instructions' is not an array in LLM response
+provide_context_aware_suggestions: 'instructions' is not an array in LLM response
+dispatch_notification: 'instructions' is not an array in LLM response
+role_permission_mapping: 'instructions' is not an array in LLM response
+
+## Quota/429 Errors
+soft_deletion_flag: 429 quota exceeded
+soft_deletion_logic: 429 quota exceeded
+data_retention_policy: 429 quota exceeded
+recoverability_mechanism: 429 quota exceeded
+i18n_library_selection: 429 quota exceeded
+i18n_library_integration: 429 quota exceeded
+i18n_configuration_setup: 429 quota exceeded
+i18n_testing_and_validation: 429 quota exceeded
+etl_extract_data: 429 quota exceeded
+etl_transform_data: 429 quota exceeded
+etl_load_data: 429 quota exceeded
+etl_engine_initialization: 429 quota exceeded
+strategy_pattern_implementation: 429 quota exceeded
+data_transformation_execution: 429 quota exceeded
+error_handling_and_logging: 429 quota exceeded
+invitation_link_validation: 429 quota exceeded
+user_registration: 429 quota exceeded
+registration_confirmation: 429 quota exceeded
+error_handling: 429 quota exceeded
+invite_member_input_validation: 429 quota exceeded
+send_invitation: 429 quota exceeded
+handle_invitation_errors: 429 quota exceeded
+skip_invitation_step: 429 quota exceeded
+create_item_endpoint: 429 quota exceeded
+read_item_endpoint: 429 quota exceeded
+update_item_endpoint: 429 quota exceeded
+delete_item_endpoint: 429 quota exceeded
+detect_language_from_request_headers: 429 quota exceeded
+detect_language_from_user_profile: 429 quota exceeded
+serve_localized_content: 429 quota exceeded
+create_list_endpoint: 429 quota exceeded
+read_list_endpoint: 429 quota exceeded
+update_list_endpoint: 429 quota exceeded
+delete_list_endpoint: 429 quota exceeded
+localize_error_messages: 429 quota exceeded
+localize_notifications: 429 quota exceeded
+localize_emails: 429 quota exceeded 

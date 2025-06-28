@@ -10,13 +10,14 @@ dotenvConfig();
 const DEFAULT_SOURCE_DIR = path.join(__dirname, "../../08-atomic-intents");
 const DEFAULT_OUTPUT_DIR = path.join(__dirname, "../../10-atomic-instructions");
 const DEFAULT_PATTERNS_FILE = path.join(__dirname, "../patterns/atomic-patterns.yaml");
-const OPENAI_MODEL = "gpt-4";
+const OPENAI_MODEL = "gpt-3.5-turbo"; // "gpt-4";
 const INSTRUCTIONS_KEY = "instructions";
 
 const SOURCE_DIR = process.env.SOURCE_DIR || DEFAULT_SOURCE_DIR;
 const OUTPUT_DIR = process.env.OUTPUT_DIR || DEFAULT_OUTPUT_DIR;
 const PATTERNS_FILE = process.env.PATTERNS_FILE || DEFAULT_PATTERNS_FILE;
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const OVERWRITE = process.env.OVERWRITE === 'true' || false;
 
 if (!OPENAI_API_KEY) throw new Error("OPENAI_API_KEY not set in environment");
 
@@ -37,7 +38,7 @@ async function main() {
   const patterns = patternsFileContent.mid_level_patterns;
   const files = getYamlFiles(SOURCE_DIR);
 
-  let mapped = 0, notMapped = 0;
+  let mapped = 0, notMapped = 0, skipped = 0;
 
   console.log("Current time:", new Date().toISOString());
   for (const file of files) {
@@ -60,9 +61,14 @@ async function main() {
           console.warn(`Skipping intent (missing id) in file: ${file}`);
           continue;
         }
+        const outPath = path.join(OUTPUT_DIR, `${intent.id}-instructions.yaml`);
+        if (!OVERWRITE && fs.existsSync(outPath)) {
+          skipped++;
+          console.log(`⏩ Skipped (already exists): ${intent.id}`);
+          continue;
+        }
         try {
           const instructions = await generateInstructionsWithLLM(intent, patterns);
-          const outPath = path.join(OUTPUT_DIR, `${intent.id}-instructions.yaml`);
           writeYaml(outPath, { [INSTRUCTIONS_KEY]: instructions });
           mapped++;
           console.log(`✔ Mapped: ${intent.id}`);
@@ -81,6 +87,7 @@ async function main() {
   console.log("==== SUMMARY ====");
   console.log(`Processed: ${files.length}`);
   console.log(`Mapped:    ${mapped}`);
+  console.log(`Skipped:   ${skipped}`);
   console.log(`Not mapped:${notMapped}`);
   console.log("Current time:", new Date().toISOString());
 }
@@ -113,9 +120,22 @@ Respond ONLY with valid YAML. The YAML must have a top-level key 'instructions:'
   }
   const instructions = (parsed as Record<string, unknown>)[INSTRUCTIONS_KEY];
   if (!Array.isArray(instructions)) {
+    logLLMError(intent.id, content, "'instructions' is not an array in LLM response");
     throw new Error(`'${INSTRUCTIONS_KEY}' is not an array in LLM response`);
   }
   return instructions;
+}
+
+function logLLMError(intentId: string, llmResponse: string, error: string) {
+  const fs = require('fs');
+  const logPath = path.join(__dirname, '../logss/llm_errors.jsonl');
+  const entry = {
+    intent: intentId,
+    error,
+    llmResponse,
+    timestamp: new Date().toISOString(),
+  };
+  fs.appendFileSync(logPath, JSON.stringify(entry) + '\n', 'utf-8');
 }
 
 // === UTILS ===
