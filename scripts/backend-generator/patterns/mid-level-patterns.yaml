@@ -1,0 +1,245 @@
+mid_level_patterns:
+  - id: scaffold_nestjs_module
+    name: Scaffold NestJS Module
+    description: Scaffold a new NestJS module with controller, service, and DTOs for a given entity.
+    parameters:
+      - entity_name
+      - fields
+      - endpoints
+      - validation
+      - rbac
+      - openapi
+    example_usage:
+      entity_name: User
+      fields: [id, email, password]
+      endpoints: [create, read, update, delete]
+      validation: true
+      rbac: [admin, user]
+      openapi: true
+  - id: add_crud_endpoints
+    name: Add CRUD Endpoints
+    description: Add CRUD endpoints to an existing module/controller for a specific entity.
+    parameters:
+      - entity_name
+      - endpoints
+      - validation
+      - docs
+    example_usage:
+      entity_name: Item
+      endpoints: [create, read, update, delete]
+      validation: true
+      docs: true
+  - id: setup_authentication
+    name: Setup Authentication
+    description: Set up authentication (e.g., JWT, session) for the application.
+    parameters:
+      - strategy
+      - user_fields
+      - password_reset
+      - guards
+    example_usage:
+      strategy: jwt
+      user_fields: [email, password]
+      password_reset: true
+      guards: [jwt, roles]
+  - id: implement_rbac
+    name: Implement RBAC
+    description: Implement role-based access control for sensitive actions.
+    parameters:
+      - roles
+      - permissions
+      - entities
+    example_usage:
+      roles: [admin, user]
+      permissions: [read, write]
+      entities: [User, Item]
+  - id: configure_env_validation
+    name: Configure Environment Validation
+    description: Configure environment variable validation and documentation.
+    parameters:
+      - variables
+      - schema
+      - docs
+    example_usage:
+      variables: [DATABASE_URL, JWT_SECRET]
+      schema: joi
+      docs: true
+  - id: setup_database
+    name: Setup Database
+    description: Set up ORM, schema, and migrations for the database.
+    parameters:
+      - orm
+      - entities
+      - migrations
+      - seed
+    example_usage:
+      orm: prisma
+      entities: [User, Item]
+      migrations: true
+      seed: true
+  - id: add_i18n_support
+    name: Add I18n Support
+    description: Add internationalization support for user-facing content.
+    parameters:
+      - locales
+      - default_locale
+      - middleware
+    example_usage:
+      locales: [en, es]
+      default_locale: en
+      middleware: true
+  - id: setup_notifications
+    name: Setup Notifications
+    description: Implement notification system for key events and user preferences.
+    parameters:
+      - channels
+      - triggers
+      - preferences
+    example_usage:
+      channels: [email]
+      triggers: [user_registered]
+      preferences: true
+  - id: enforce_validation
+    name: Enforce Validation
+    description: Enforce input validation for all API endpoints using DTOs and class-validator.
+    parameters:
+      - entities
+      - fields
+      - decorators
+    example_usage:
+      entities: [User]
+      fields: [email, password]
+      decorators: [IsEmail, IsString]
+  - id: setup_error_handling
+    name: Setup Error Handling
+    description: Standardize error handling and response format across the app.
+    parameters:
+      - error_schema
+      - filter
+      - docs
+    example_usage:
+      error_schema: true
+      filter: global
+      docs: true
+  - id: add_audit_logging
+    name: Add Audit Logging
+    description: Track critical data changes for compliance and debugging.
+    parameters:
+      - entities
+      - actions
+      - integration
+    example_usage:
+      entities: [User]
+      actions: [create, update]
+      integration: [rbac]
+  - id: setup_ci_cd
+    name: Setup CI/CD
+    description: Set up Docker and CI/CD pipelines for build, test, and deploy.
+    parameters:
+      - docker
+      - ci_provider
+      - steps
+    example_usage:
+      docker: true
+      ci_provider: github_actions
+      steps: [lint, test, build]
+  - id: setup_feature_flags
+    name: Setup Feature Flags
+    description: Implement a feature flag system to enable/disable features at runtime for experimentation, gradual rollout, and per-user/group/env targeting.
+    parameters:
+      - flag_schema
+      - toggles
+      - admin_api
+      - audit_logging
+    example_usage:
+      flag_schema: { name: string, enabled: boolean, target: [user, group, env] }
+      toggles: [featureA, featureB]
+      admin_api: true
+      audit_logging: true
+  - id: setup_scheduled_jobs
+    name: Setup Scheduled/Background Jobs
+    description: Set up scheduled or background jobs for tasks like retention policies, periodic sync, or async processing (e.g., with BullMQ, cron, or similar).
+    parameters:
+      - job_types
+      - schedule
+      - persistence
+      - monitoring
+    example_usage:
+      job_types: [retention, sync, notification]
+      schedule: cron
+      persistence: true
+      monitoring: true
+  - id: setup_integration
+    name: Setup Integration/Webhooks
+    description: Add support for outbound/inbound integrations with external systems, including webhooks, API calls, and event subscriptions.
+    parameters:
+      - integration_type
+      - endpoints
+      - security
+      - mapping
+    example_usage:
+      integration_type: webhook
+      endpoints: [onUserCreated, onItemUpdated]
+      security: [signature, secret]
+      mapping: { userId: externalId }
+  - id: setup_analytics
+    name: Setup Analytics/Event Tracking
+    description: Implement analytics or event tracking for key actions, supporting audit, metrics, and product insights.
+    parameters:
+      - events
+      - storage
+      - export
+      - integration
+    example_usage:
+      events: [user_login, item_created]
+      storage: db
+      export: csv
+      integration: [external_analytics]
+  - id: setup_soft_deletion_and_retention
+    name: Setup Soft Deletion & Retention
+    description: Implement soft deletion flags, recovery endpoints, and scheduled purges for compliance and recoverability.
+    parameters:
+      - entities
+      - retention_policy
+      - recovery_api
+      - purge_schedule
+    example_usage:
+      entities: [User, Item]
+      retention_policy: 30d
+      recovery_api: true
+      purge_schedule: nightly
+  - id: setup_transactional_logic
+    name: Setup Transactional/Atomic Operations
+    description: Ensure critical operations are performed atomically, using transactions for multi-entity or multi-step changes.
+    parameters:
+      - operations
+      - rollback
+      - isolation_level
+    example_usage:
+      operations: [createUserAndProfile, assignRole]
+      rollback: true
+      isolation_level: serializable
+  - id: enforce_advanced_policies
+    name: Enforce Advanced Policy Constraints
+    description: Enforce business rules and cross-entity constraints (e.g., last-owner, dual-track permissions, custom policies).
+    parameters:
+      - policies
+      - entities
+      - enforcement_points
+    example_usage:
+      policies: [last_owner, dual_track]
+      entities: [Space, RoleAssignment]
+      enforcement_points: [beforeDelete, beforeUpdate]
+  - id: setup_hybrid_suggestion_service
+    name: Setup Hybrid/Context-Aware Suggestion Service
+    description: Implement a service for deduplicated, context-aware suggestions (e.g., hybrid catalog, AI-driven recommendations).
+    parameters:
+      - sources
+      - deduplication
+      - context_logic
+      - api
+    example_usage:
+      sources: [globalCatalog, communityCatalog]
+      deduplication: true
+      context_logic: [userRole, recentActivity]
+      api: /suggestions 

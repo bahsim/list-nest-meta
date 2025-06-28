@@ -1,0 +1,267 @@
+PS C:\learn\pet-projects\list-nest\list-nest-meta\scripts\backend-generator> npm start
+
+> backend-generator@0.1.0 start
+> ts-node-esm src/index.ts
+
+[dotenv@17.0.0] injecting env (4) from .env – 🔐 encrypt with dotenvx: https://dotenvx.com
+Current time: 2025-06-28T08:31:31.251Z
+✔ Mapped: accept_invitation
+✔ Mapped: decline_invitation
+✔ Mapped: handle_invalid_invitation
+✔ Mapped: send_confirmation_message
+✔ Mapped: ai_001
+✔ Mapped: ai_002
+✔ Mapped: ai_003
+✔ Mapped: ai_004
+✔ Mapped: admin_catalog_management_endpoint_creation
+✔ Mapped: admin_catalog_management_endpoint_deletion
+✔ Mapped: admin_catalog_management_endpoint_update
+✔ Mapped: admin_catalog_management_endpoint_retrieval
+✔ Mapped: admin_dashboard_navigation
+✔ Mapped: admin_user_management
+✔ Mapped: admin_space_management
+✔ Mapped: admin_settings_management
+✔ Mapped: admin_system_health
+✔ Mapped: fulfillment_scenario_handling
+✔ Mapped: substitution_logic_handling
+✔ Mapped: coverage_tracking
+✔ Mapped: ai_suggest_space_blueprints
+✔ Mapped: ai_suggest_starter_lists
+✔ Mapped: ai_review_suggestions
+✖ Failed for ai_native_workflow_001: 'instructions' is not an array in LLM response
+✔ Mapped: ai_native_workflow_002
+✔ Mapped: ai_native_workflow_003
+✔ Mapped: ai_generate_profiling_questions
+✔ Mapped: ai_present_profiling_questions
+✔ Mapped: ai_store_profiling_responses
+✔ Mapped: fetch_user_preferences
+✔ Mapped: update_user_preferences
+✔ Mapped: assign_role_on_community_creation
+✔ Mapped: verify_role_assignment_on_failure
+✔ Mapped: audit_history_creation
+✔ Mapped: audit_history_update
+✔ Mapped: audit_history_deletion
+✖ Failed for data_integrity_verification: 'instructions' is not an array in LLM response
+✔ Mapped: perm_service_creation
+✖ Failed for perm_service_integration: 'instructions' is not an array in LLM response
+✔ Mapped: perm_service_logging
+✔ Mapped: change_community_type_selection
+✔ Mapped: update_subsequent_steps
+✔ Mapped: ensure_state_consistency
+✔ Mapped: configure_email_notifications
+✔ Mapped: configure_push_notifications
+✔ Mapped: validate_email_address
+✖ Failed for handle_notification_errors: 'instructions' is not an array in LLM response
+✔ Mapped: validate_device_compatibility
+✔ Mapped: delete_community
+✔ Mapped: delete_child_spaces
+✔ Mapped: handle_content_deletion
+✔ Mapped: select_community_type
+✔ Mapped: persist_community_type_selection
+✖ Failed for tailor_setup_process_based_on_community_type: bad indentation of a mapping entry (55:7)
+
+ 52 |       password_reset: true
+ 53 |       guards:
+ 54 |         - jwt
+ 55 |       - roles
+------------^
+ 56 |   - pattern: configure_env_validation
+ 57 |     parameters:
+✔ Mapped: ensure_accessibility_of_community_selection
+✔ Mapped: tailor_ui_to_user_profile
+✔ Mapped: adapt_steps_to_user_segment
+✔ Mapped: fallback_mechanism_for_onboarding
+✔ Mapped: dynamic_adaptation_based_on_user_behavior
+✔ Mapped: render_questions_based_on_community_type
+✔ Mapped: validate_answers_for_community_questions
+✔ Mapped: store_community_setup_responses
+✔ Mapped: define_admin_role
+✔ Mapped: implement_isadminguard
+✔ Mapped: create_catalogitem_entity_structure
+✔ Mapped: create_catalogitem_crud_endpoints
+✔ Mapped: secure_catalogitem_endpoints
+✔ Mapped: create_item_entity
+✔ Mapped: create_items_service
+✔ Mapped: validate_item_data
+✔ Mapped: create_base_language_file
+✖ Failed for update_language_files: bad indentation of a sequence entry (57:4)
+
+ 54 |         - value
+ 55 |       decorators:
+ 56 |         - IsString
+ 57 |    - pattern: setup_transactional_ ...
+---------^
+ 58 |      parameters:
+ 59 |        operations:
+✔ Mapped: validate_language_files
+✔ Mapped: translate_language_files
+✔ Mapped: create_list_entity
+✔ Mapped: create_lists_service
+✔ Mapped: validate_list_name
+✔ Mapped: create_notification_table
+✔ Mapped: insert_notification_record
+✖ Failed for retrieve_notification_record: 'instructions' is not an array in LLM response
+✔ Mapped: update_notification_status
+✔ Mapped: delete_notification_record
+✔ Mapped: create_preference_entity_001
+✔ Mapped: create_preference_entity_002
+✖ Failed for create_preference_entity_003: 'instructions' is not an array in LLM response
+✖ Failed for create_role_entity: 'instructions' is not an array in LLM response
+✔ Mapped: create_permission_entity
+✔ Mapped: create_roleassignment_entity
+✔ Mapped: create_user_profile_entity_structure
+✖ Failed for create_user_profile_entity_persistence: 'instructions' is not an array in LLM response
+✔ Mapped: create_user_profile_entity_api
+✔ Mapped: create_user_profile_entity_validation
+✔ Mapped: opt_in_to_daily_digest
+✔ Mapped: select_daily_digest_time
+✔ Mapped: preview_daily_digest
+✔ Mapped: handle_empty_state
+✔ Mapped: handle_opt_in_errors
+✔ Mapped: data_consistency_check
+✔ Mapped: data_compliance_check
+✔ Mapped: smooth_transition_during_upgrade
+✔ Mapped: user_data_removal
+✔ Mapped: assign_default_preferences
+✔ Mapped: notify_user_of_defaults
+✔ Mapped: admin_override_preferences
+✖ Failed for set_default_language_for_new_users: 'instructions' is not an array in LLM response
+✔ Mapped: set_default_timezone_for_new_users
+✔ Mapped: set_default_notification_settings_for_new_users
+✔ Mapped: set_default_privacy_settings_for_new_users
+✔ Mapped: digital_concierge_initialize_session
+✔ Mapped: digital_concierge_authenticate_user
+✔ Mapped: digital_concierge_provide_onboarding_suggestions
+✔ Mapped: digital_concierge_handle_next_actions
+✔ Mapped: digital_concierge_error_handling
+✔ Mapped: review_process_definition
+✔ Mapped: approval_process_definition
+✔ Mapped: change_management_process_definition
+✔ Mapped: dual_track_permission_model_support_001
+✔ Mapped: dual_track_permission_model_support_002
+✔ Mapped: enforce_space_creation_permission
+✖ Failed for enforce_space_modification_permission: 'instructions' is not an array in LLM response
+✔ Mapped: enforce_space_deletion_permission
+✔ Mapped: external_system_entity_001
+✔ Mapped: external_system_entity_002
+✔ Mapped: external_system_entity_003
+✔ Mapped: external_system_entity_004
+✔ Mapped: ffs_001
+✔ Mapped: ffs_002
+✔ Mapped: ffs_003
+✖ Failed for fetch_user_profile_authentication: 'instructions' is not an array in LLM response
+✔ Mapped: fetch_user_profile_authorization
+✖ Failed for fetch_user_profile_data_retrieval: 'instructions' is not an array in LLM response
+✔ Mapped: award_xp_on_completion
+✔ Mapped: award_badge_on_completion
+✔ Mapped: provide_feedback_on_completion
+✔ Mapped: handle_error_in_award_process
+✔ Mapped: batch_process_awards
+✔ Mapped: display_user_progress
+✔ Mapped: display_user_xp
+✖ Failed for display_user_badges: bad indentation of a mapping entry (85:7)
+
+ 82 |       export: csv
+ 83 |       integration:
+ 84 |         - external_analytics
+ 85 |       - pattern: configure_env_validation
+------------^
+ 86 |     params:
+ 87 |       variables:
+✔ Mapped: display_gamification_history
+✖ Failed for handle_filtering: can not read an implicit mapping pair; a colon is missed (58:18)
+
+ 55 |         - User
+ 56 |         - GamificationData
+ 57 |       migrations: true
+ 58 |       seed:false
+-----------------------^
+ 59 |   - pattern: setup_error_handling
+ 60 |     parameters:
+✔ Mapped: handle_error_states
+✖ Failed for handle_empty_states: 'instructions' is not an array in LLM response
+✖ Failed for generate_ai_driven_code: 'instructions' is not an array in LLM response
+✖ Failed for generate_ai_driven_documentation: 'instructions' is not an array in LLM response
+✔ Mapped: generate_ai_driven_tests
+✔ Mapped: env_var_storage
+✔ Mapped: env_var_access
+✔ Mapped: global_config_update
+✖ Failed for config_security: 'instructions' is not an array in LLM response
+✔ Mapped: error_logging_standardization
+✖ Failed for user_friendly_error_messages: 'instructions' is not an array in LLM response
+✔ Mapped: centralized_error_reporting
+✔ Mapped: admin_api_path_structure
+✔ Mapped: admin_api_path_security
+✔ Mapped: admin_api_path_documentation
+✔ Mapped: sync_initialization
+✔ Mapped: duplicate_detection
+✔ Mapped: sync_completion_verification
+✔ Mapped: list_users
+✔ Mapped: view_user_details
+✔ Mapped: update_user
+✔ Mapped: manage_global_catalog
+✔ Mapped: manage_community_catalog
+✔ Mapped: deduplicate_catalog_entries
+✖ Failed for provide_context_aware_suggestions: 'instructions' is not an array in LLM response
+✔ Mapped: create_notification_entity
+✖ Failed for dispatch_notification: 'instructions' is not an array in LLM response
+✔ Mapped: integrate_notification_with_triggers
+✔ Mapped: role_enum_creation
+✔ Mapped: permission_enum_creation
+✖ Failed for role_permission_mapping: 'instructions' is not an array in LLM response
+✔ Mapped: access_control_enforcement
+✖ Failed for soft_deletion_flag: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for soft_deletion_logic: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for data_retention_policy: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for recoverability_mechanism: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for i18n_library_selection: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for i18n_library_integration: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for i18n_configuration_setup: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for i18n_testing_and_validation: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for etl_extract_data: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for etl_transform_data: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for etl_load_data: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for etl_engine_initialization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for strategy_pattern_implementation: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for data_transformation_execution: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for error_handling_and_logging: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for invitation_link_validation: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for user_registration: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for registration_confirmation: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for error_handling: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for invite_member_input_validation: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for send_invitation: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for handle_invitation_errors: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for skip_invitation_step: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for create_item_endpoint: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for read_item_endpoint: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for update_item_endpoint: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for delete_item_endpoint: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for detect_language_from_request_headers: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for detect_language_from_user_profile: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for serve_localized_content: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for create_list_endpoint: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for read_list_endpoint: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for update_list_endpoint: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for delete_list_endpoint: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for localize_error_messages: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for localize_notifications: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+✖ Failed for localize_emails: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+node:internal/process/per_thread:233
+      throw errnoException(err, 'kill');
+      ^
+
+Error: kill ESRCH
+    at process.kill (node:internal/process/per_thread:233:13)
+    at process.sendSignalToChild (C:\learn\pet-projects\list-nest\list-nest-meta\scripts\backend-generator\node_modules\ts-node\dist\child\spawn-child.js:45:17)
+    at process.emit (node:events:513:28)
+    at process.emit (node:domain:489:12) {
+  errno: -4040,
+  code: 'ESRCH',
+  syscall: 'kill'
+}
+
+Node.js v18.15.0
+Terminate batch job (Y/N)?
+^CThe system cannot open the device or file specified.
+PS C:\learn\pet-projects\list-nest\list-nest-meta\scripts\backend-generator>

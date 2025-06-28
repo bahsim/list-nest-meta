@@ -1,0 +1,30 @@
+{
+  "name": "backend-generator",
+  "version": "0.1.0",
+  "description": "CLI tool to generate instructions and code scaffolding for automated backend generation using atomic and mid-level patterns.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node-esm src/index.ts",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "backend",
+    "generator",
+    "automation",
+    "nestjs",
+    "cli",
+    "atomic-patterns"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "openai": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "eslint": "^8.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}
