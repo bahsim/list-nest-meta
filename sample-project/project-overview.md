@@ -1,39 +1,64 @@
-# Sample Project: Gift Sharing Platform
+# WishListShare Sample Project
 
-> **Purpose:** Reference implementation demonstrating IDGL Platform-Process Systematization  
-> **Platform:** NestJS Backend  
-> **Framework:** Intent-Driven Generative Lifecycle (IDGL)
+Gift sharing platform backend demonstrating IDGL Platform-Process Systematization for NestJS.
 
----
+## What this demonstrates
 
-## **🎯 Overview**
+IDGL systematic generation approach:
+- Concept documentation drives implementation
+- Configuration-based code generation  
+- Three-phase execution with validation
+- Human strategic direction + AI tactical execution
 
-This sample project demonstrates how to apply **IDGL Platform-Process Systematization** to generate a complete NestJS backend system. It serves as a reference implementation showing the progression from comprehensive documentation to working software.
+## Project structure
 
-## **📁 Project Structure**
+### 01-concept/ - Domain foundation
+- Business rules and entity relationships
+- API design and architectural patterns  
+- Implementation patterns and service responsibilities
 
-### **[01-concept/](./01-concept/)** - Complete System Documentation
-Comprehensive technical specification validated against working implementation:
+### 02-strategy/ - Execution planning
+- `strategic-plan.md` - Three-phase systematic approach
+- Resource allocation and success metrics
+- Human-AI collaboration strategy
 
-- **[concept-overview.md](./01-concept/concept-overview.md)** - Project overview and navigation
-- **[architecture.md](./01-concept/architecture.md)** - System architecture and component relationships
-- **[domain-models.md](./01-concept/domain-models.md)** - Entity definitions and validation rules
-- **[business-rules.md](./01-concept/business-rules.md)** - Complex business logic and constraints
-- **[controller-endpoints.md](./01-concept/controller-endpoints.md)** - API structure and endpoint definitions
-- **[implementation-patterns.md](./01-concept/implementation-patterns.md)** - Code patterns and best practices
+### 03-tactical/ - Implementation resources
+- `platform-configuration.ts` - Single source of truth configuration
+- `execution-commands.sh` - Systematic generation commands  
+- `business-rules-reference.md` - Implementation-focused rules reference
 
-## **🏆 Validation Results**
+## How to execute
 
-- **85% Correlation** with working backend implementation
-- **Complete Coverage** of all system components
-- **Proven Patterns** validated through real-world usage
+**Prerequisites:** Node.js, NestJS CLI, PostgreSQL with `nest_project` database
 
-## **🔗 IDGL Process Reference**
+**Step 1: Scaffolding**
+```bash
+cd 03-tactical
+chmod +x scaffolding-phase.sh
+./scaffolding-phase.sh
+```
 
-This sample project validates the systematic approach documented in:
+**Step 2: Implementation**
+Use `platform-configuration.ts` with AI assistance to generate entities, services, and authentication from business rules.
 
-- **[Platform Systematization Guide](../docs/01-platform-processes/platform-systematization-guide.md)**
-- **[NestJS Complete Process](../docs/01-platform-processes/nestjs/nestjs-complete-process.md)**
-- **[Configuration Example](../docs/01-platform-processes/nestjs/kupipodariday-config-example.md)**
+**Step 3: Validation**
+```bash
+npm run start:dev
+curl http://localhost:3000/api
+```
 
-**🎯 Demonstrates the effectiveness of comprehensive documentation → systematic software generation** 
+## Expected outcome
+
+Complete working NestJS backend with:
+- JWT authentication and user management
+- Gift wish creation and collective funding
+- Complex business rules (ownership, privacy, transactions)
+- Sophisticated data relationships and validation
+
+## Validation results
+
+- 85% correlation with working implementation
+- Complete system coverage from documentation
+- Proven patterns for complex business logic
+
+Demonstrates effectiveness of comprehensive documentation leading to systematic software generation. 
