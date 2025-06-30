@@ -1,6 +1,6 @@
 # API Flows and Business Processes
 
-This document provides sequence diagrams and business process flows for key API operations in the КупиПодариДай backend.
+This document provides sequence diagrams and business process flows for key API operations in the WishListShare backend.
 
 ---
 

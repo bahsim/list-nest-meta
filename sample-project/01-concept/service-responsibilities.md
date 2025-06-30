@@ -1,6 +1,6 @@
 # Service Responsibilities and Cross-Cutting Concerns
 
-This document provides an expert-level summary of the main responsibilities and cross-cutting concerns for the core services in the КупиПодариДай backend. Each section outlines the service's business logic, validation, authorization, transactionality, and separation of concerns.
+This document provides an expert-level summary of the main responsibilities and cross-cutting concerns for the core services in the WishListShare backend. Each section outlines the service's business logic, validation, authorization, transactionality, and separation of concerns.
 
 ---
 

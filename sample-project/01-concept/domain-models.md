@@ -1,6 +1,6 @@
 # Domain Models: Properties and Relationships
 
-This document provides an expert-level summary of the main properties, relationships, and validation rules for the core domain models in the КупиПодариДай backend. It integrates detailed field definitions, relationship types, validation decorators, and advanced notes. An ER diagram is included for visual reference.
+This document provides an expert-level summary of the main properties, relationships, and validation rules for the core domain models in the WishListShare backend. It integrates detailed field definitions, relationship types, validation decorators, and advanced notes. An ER diagram is included for visual reference.
 
 ---
 

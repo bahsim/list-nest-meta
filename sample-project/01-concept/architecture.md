@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This document provides a high-level, expert-level overview of the КупиПодариДай wishlist service backend architecture. It integrates conceptual, structural, and implementation details, including module structure, database configuration, authentication, global patterns, and a detailed inventory of subcomponents.
+This document provides a high-level, expert-level overview of the WishListShare wishlist service backend architecture. It integrates conceptual, structural, and implementation details, including module structure, database configuration, authentication, global patterns, and architectural decisions.
 
 ---
 

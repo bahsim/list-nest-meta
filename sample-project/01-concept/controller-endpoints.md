@@ -1,6 +1,6 @@
-# Controller Endpoints and Responsibilities
+# Controller Endpoints and API Structure
 
-This document provides an expert-level summary of the main endpoints, routes, and responsibilities for the core controllers in the КупиПодариДай backend. Each section outlines endpoints, HTTP methods, route patterns, notable guards, and request/response patterns.
+This document provides an expert-level summary of the main endpoints, routes, and responsibilities for the core controllers in the WishListShare backend. Each section outlines endpoints, HTTP methods, route patterns, notable guards, and request/response patterns.
 
 ---
 
