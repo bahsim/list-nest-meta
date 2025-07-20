@@ -1,0 +1,18 @@
+[
+  {
+    "id": "useApiData-C:/learn/pet-projects/list-nest/list-nest-meta/sample-projects/react-sample/src/hooks/useApiData.ts",
+    "filePath": "C:/learn/pet-projects/list-nest/list-nest-meta/sample-projects/react-sample/src/hooks/useApiData.ts",
+    "name": "useApiData",
+    "type": "hook",
+    "description": "A generic hook to fetch data from an API endpoint",
+    "hash": "a9bd1e6f76c77ff71288f157114aad15",
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "returnType": "{ data: T | null; isLoading: boolean; error: Error | null; }"
+  }
+]

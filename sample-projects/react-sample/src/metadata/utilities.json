@@ -1,0 +1,23 @@
+[
+  {
+    "id": "formatDate-C:/learn/pet-projects/list-nest/list-nest-meta/sample-projects/react-sample/src/utils/formatDate.ts",
+    "filePath": "C:/learn/pet-projects/list-nest/list-nest-meta/sample-projects/react-sample/src/utils/formatDate.ts",
+    "name": "formatDate",
+    "type": "utility",
+    "description": "Formats a date into a readable string",
+    "hash": "4746141f22bb072b8839ad352b08a24f",
+    "parameters": [
+      {
+        "name": "date",
+        "type": "Date",
+        "required": true
+      },
+      {
+        "name": "format",
+        "type": "\"short\" | \"long\"",
+        "required": true
+      }
+    ],
+    "returnType": "string"
+  }
+]

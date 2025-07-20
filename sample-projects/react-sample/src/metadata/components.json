@@ -1,0 +1,61 @@
+[
+  {
+    "id": "App-C:/learn/pet-projects/list-nest/list-nest-meta/sample-projects/react-sample/src/App.tsx",
+    "filePath": "C:/learn/pet-projects/list-nest/list-nest-meta/sample-projects/react-sample/src/App.tsx",
+    "name": "App",
+    "type": "component",
+    "description": "React component App",
+    "hash": "df99ced4bb04a17b0f3192d5e4af5b57",
+    "props": []
+  },
+  {
+    "id": "ProductCard-C:/learn/pet-projects/list-nest/list-nest-meta/sample-projects/react-sample/src/components/ProductCard.tsx",
+    "filePath": "C:/learn/pet-projects/list-nest/list-nest-meta/sample-projects/react-sample/src/components/ProductCard.tsx",
+    "name": "ProductCard",
+    "type": "component",
+    "description": "React component ProductCard",
+    "hash": "782ba27283eff9f0209bd73658d1f263",
+    "props": [
+      {
+        "name": "productId",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "showImage",
+        "type": "boolean",
+        "required": true
+      },
+      {
+        "name": "onSelect",
+        "type": "(() => void) | undefined",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "UserProfileCard-C:/learn/pet-projects/list-nest/list-nest-meta/sample-projects/react-sample/src/components/UserProfileCard.tsx",
+    "filePath": "C:/learn/pet-projects/list-nest/list-nest-meta/sample-projects/react-sample/src/components/UserProfileCard.tsx",
+    "name": "UserProfileCard",
+    "type": "component",
+    "description": "React component UserProfileCard",
+    "hash": "2a34d485d12e5edaabacf4ba48c63cb9",
+    "props": [
+      {
+        "name": "userId",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "showAvatar",
+        "type": "boolean",
+        "required": true
+      },
+      {
+        "name": "onClick",
+        "type": "(() => void) | undefined",
+        "required": false
+      }
+    ]
+  }
+]
