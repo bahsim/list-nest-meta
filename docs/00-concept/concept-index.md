@@ -33,6 +33,15 @@ This directory contains the **foundational conceptual definitions** of IDGL that
 
 ---
 
+### **Supporting Guides**
+
+1. **[Prompt Engineering Guide](./prompt-engineering-guide.md)**
+   - **What it is**: Recommendations for crafting effective AI prompts.
+   - **Purpose**: To help users get better results from the AI.
+   - **Use as**: A practical guide for interacting with the AI.
+
+---
+
 ## How to Use These Documents
 
 ### **For Evaluation**
